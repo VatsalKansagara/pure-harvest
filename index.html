@@ -43,7 +43,7 @@
                             <ul>
                                 <li>
                                     <img src="images/login-icon.png">
-                                    <a href="#">Login</a>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#loginmodal">Login</a>
                                 </li>
                                 <li>
                                     <img src="images/login-icon1.png">
@@ -56,6 +56,38 @@
             </div>
         </div>
 
+        <!-- Login Modal -->
+        <div class="modal fade" id="loginmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form action="">
+                        <div class="modal-header">
+                            <h3 class="modal-title fs-5 d-flex align-items-center"><i
+                                    class="fa-regular fa-circle-user fs-5 me-2"></i>User Login</h3>
+                            <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control shadow-none">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-control shadow-none">
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <button type="submit" class="btn btn-dark shadow-none">Login</button>
+                                <a href="javascript: void(0)" class="text-secondary text-decoration-none">Forgot
+                                    Password?</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
         <!-- Main header Start -->
         <div class="main-header">
             <div class="container">
